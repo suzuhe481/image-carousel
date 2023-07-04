@@ -15,7 +15,7 @@ const imageSlider = () => {
   prevImageSymbol.addEventListener("click", imageSliderHandler);
   prevImageItem.appendChild(prevImageSymbol);
 
-  // Next iamge button
+  // Next image button
   const nextImageItem = document.createElement("li");
   const nextImageSymbol = document.createElement("button");
   nextImageSymbol.id = "forward-arrow";
