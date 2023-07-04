@@ -47,8 +47,9 @@ const nextImage = () => {
 
 // Changes the displayed image to the image at the current index.
 const changeimagetoCurrentIndex = () => {
-  imageContainer.style.backgroundImage =
-    "url('/src/images/ramen" + imageIndex + ".jpg')";
+  var imageURL = "url('/src/images/" + imageCollection[imageIndex - 1];
+
+  imageContainer.style.backgroundImage = imageURL;
 };
 
 // Changes imageIndex to index of clicked nav dot.
