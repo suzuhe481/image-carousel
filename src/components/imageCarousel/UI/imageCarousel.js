@@ -1,5 +1,7 @@
 import imageSlider from "../../imageSlider/UI/imageSlider";
 
+import { imageCollection } from "../../..";
+
 import "./imageCarousel.css";
 
 const imageCarousel = () => {
@@ -9,7 +11,8 @@ const imageCarousel = () => {
   imageContainer.id = "imageContainer";
 
   // Sets to default first image.
-  imageContainer.style.backgroundImage = "url(../src/images/ramen1.jpg)";
+  var imageURL = "url('/src/images/" + imageCollection[0];
+  imageContainer.style.backgroundImage = imageURL;
 
   imageCarousel.appendChild(imageContainer);
 
